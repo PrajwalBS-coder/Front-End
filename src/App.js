@@ -1,7 +1,7 @@
-import './App.css';
-import Greet from './components/Greet';
-import Welcome from './components/Welcome';
-import { Example } from './components/Expmple'; 
+import "./App.css";
+import Greet from "./components/Greet";
+import Welcome from "./components/Welcome";
+import { Example } from "./components/Expmple";
 
 function App() {
   return (
@@ -9,6 +9,8 @@ function App() {
       <Greet />
       <Welcome />
       <Example />
+      <Welcome />
+      <Welcome />
     </div>
   );
 }
