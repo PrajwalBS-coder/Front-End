@@ -2,6 +2,7 @@ import "./App.css";
 import Greet from "./components/Greet";
 import Welcome from "./components/Welcome";
 import { Example } from "./components/Expmple";
+import  Props  from "./components/Props";
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <Welcome />
       <Example />
       <Welcome />
-      <Welcome />
+      <Example  />
+      <Props name="Jarvis" role="Tester" />
     </div>
   );
 }
