@@ -1,7 +1,12 @@
-import React  from "react";
+import React from "react";
 
-const Greet = () => {
-    return <h1>Hello World! This is the Detection Microfrontend.</h1>;
-}
+const Greet = (props) => {
+  return (
+    <div>
+      <h1>Hello World! This is the Detection Microfrontend.</h1>
+      {props.children}
+    </div>
+  );
+};
 
-export default Greet
+export default Greet;
