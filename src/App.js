@@ -4,6 +4,7 @@ import Welcome from "./components/Welcome";
 import { Example } from "./components/Expmple";
 import Props from "./components/Props";
 import  Example_State  from "./components/Classstate";
+import CountNo from "./components/CountNo";
 
 function App() {
   return (
@@ -19,7 +20,9 @@ function App() {
       <Welcome  name="Lilly" role="Developer" />
       <Example  />
       <Props name="Jarvis" role="Tester" /> */
-        <Example_State />
+        // <Example_State />
+        <CountNo />
+
       }
     </div>
   );
