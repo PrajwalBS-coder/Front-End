@@ -8,10 +8,19 @@ class CountNo extends Component {
     };
   }
   increment() {
-    this.setState({ count: this.state.count + 1 }, () =>
-      console.log(this.state.count)//Here The Value will print after increment
+    this.setState(
+      { count: this.state.count + 1 },
+      () => console.log(this.state.count) //Here The Value will print after increment
     );
-    console.log(this.state.count);//Here The Value will print first then increment
+    console.log(this.state.count); //Here The Value will print first then increment
+  }
+
+  incrementFive() {
+    this.increment();
+    this.increment();
+    this.increment();
+    this.increment();
+    this.increment();
   }
 
   render() {
@@ -19,7 +28,7 @@ class CountNo extends Component {
       <div>
         count{this.state.count}
         <br></br>
-        <button onClick={() => this.increment()}>Increment</button>
+        <button onClick={() => this.incrementFive()}>Increment</button> {/* Here Even though we are calling incrementFive() it will print 5 times but the value will be 1 because it is async*/}
       </div>
     );
   }
